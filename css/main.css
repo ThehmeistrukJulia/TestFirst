@@ -1,13 +1,13 @@
 
 
 
-body{
+/* body{ */
     /* height: 800px; */
      /* background-color:  rgb(241, 108, 219); */
-     background-image: url(../img/bg.jpg);
+     /* background-image: url(../img/bg.jpg);
      background-repeat: no-repeat;
-}  
- 
+}   */
+/*  
  .div1{
      margin: 0 auto;
      width: 400px;
@@ -118,4 +118,15 @@ button{
     cursor: pointer;
     border: darkslategray solid 1px;
     font-size: 60px;
+} */
+
+
+body{
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+h1{
+    color: brown;
+    font-size: 40px;
+    text-align: center;p
 }

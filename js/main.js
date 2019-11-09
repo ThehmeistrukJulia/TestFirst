@@ -1,4 +1,4 @@
-
+  
 
 
 // var button = document.querySelector("#start");
@@ -188,72 +188,72 @@
 
 
 
-var input = document.querySelector('.list');
-var ul = document.querySelector('.ul');
-var span2=document.querySelectorAll('span');
-var saveBTN=document.querySelector('.saveBTN');
-var clearBTN=document.querySelector('.clearBTN');
-var tipsBTN=document.querySelector('.tipsBTN');
-var pen=document.querySelector('.pen');
-var show=true;
-var line=false;
-var tipsText=document.querySelector('.tipsText')
-var close=document.querySelector('.close')
-var li=document.querySelector('li');
-input.addEventListener('keypress',function(KeyPress){
-    if(KeyPress.which===13){
-        var li =document.createElement('li');
-        var spanElement=document.createElement('span');
-        var icon=document.createElement('i');
-        var text=this.value;
-        this.value="   ";
-        icon.classList.add('fas','fa-trash-alt');
-        spanElement.append(icon);
-        ul.appendChild(li).append(spanElement,text);
-        spanElement.addEventListener('click',function(){
-            this.parentElement.remove();
-        })
+// var input = document.querySelector('.list');
+// var ul = document.querySelector('.ul');
+// var span2=document.querySelectorAll('span');
+// var saveBTN=document.querySelector('.saveBTN');
+// var clearBTN=document.querySelector('.clearBTN');
+// var tipsBTN=document.querySelector('.tipsBTN');
+// var pen=document.querySelector('.pen');
+// var show=true;
+// var line=false;
+// var tipsText=document.querySelector('.tipsText')
+// var close=document.querySelector('.close')
+// var li=document.querySelector('li');
+// input.addEventListener('keypress',function(KeyPress){
+//     if(KeyPress.which===13){
+//         var li =document.createElement('li');
+//         var spanElement=document.createElement('span');
+//         var icon=document.createElement('i');
+//         var text=this.value;
+//         this.value="   ";
+//         icon.classList.add('fas','fa-trash-alt');
+//         spanElement.append(icon);
+//         ul.appendChild(li).append(spanElement,text);
+//         spanElement.addEventListener('click',function(){
+//             this.parentElement.remove();
+//         })
 
-        li.addEventListener('click',function(){
-            if (line==false){this.style.textDecoration="line-through";
-            line=true;}
-            else{this.style.textDecoration="line-through";
-            line=false;
-           } 
+//         li.addEventListener('click',function(){
+//             if (line==false){this.style.textDecoration="line-through";
+//             line=true;}
+//             else{this.style.textDecoration="line-through";
+//             line=false;
+//            } 
         
-        })
+//         })
 
     
-}})
-for(var i=0;i<span2.length;i++){
-    span2[i].addEventListener('click',function(){
-     this.parentElement.remove();
-    })
-}
-saveBTN.addEventListener("click",function(){
-    localStorage.setItem('ListsText',ul.textContent);
-})
-clearBTN.addEventListener('click',function(){
-    ul.innerHTML=" ";
-    localStorage.removeItem('listText',ul.innerHTML);
-})
-// tipsBTN.addEventListener('click',function(){
-//     ul.innerHTML=ul.textContent;
-//     localStorage.getItem('ListsText',ul.textContent);
+// }})
+// for(var i=0;i<span2.length;i++){
+//     span2[i].addEventListener('click',function(){
+//      this.parentElement.remove();
+//     })
+// }
+// saveBTN.addEventListener("click",function(){
+//     localStorage.setItem('ListsText',ul.textContent);
 // })
-pen.addEventListener('click',function(){
-   if (show==true){input.style.display="none";
-     show=false;}
-     else{input.style.display="block";
-     show=true;
-    } 
-})
-tipsBTN.addEventListener('click',function(){
-    tipsText.style.top="0px"
-    close.addEventListener('click',function(){
-        tipsText.style.top="-2000px"
-    })
-})
+// clearBTN.addEventListener('click',function(){
+//     ul.innerHTML=" ";
+//     localStorage.removeItem('listText',ul.innerHTML);
+// })
+// // tipsBTN.addEventListener('click',function(){
+// //     ul.innerHTML=ul.textContent;
+// //     localStorage.getItem('ListsText',ul.textContent);
+// // })
+// pen.addEventListener('click',function(){
+//    if (show==true){input.style.display="none";
+//      show=false;}
+//      else{input.style.display="block";
+//      show=true;
+//     } 
+// })
+// tipsBTN.addEventListener('click',function(){
+//     tipsText.style.top="0px"
+//     close.addEventListener('click',function(){
+//         tipsText.style.top="-2000px"
+//     })
+// })
 
 
 
